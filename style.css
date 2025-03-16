@@ -1,0 +1,411 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'poppins',sans-serif;
+    background-color: black;
+}
+
+    /* Navbar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #323232;
+}
+
+.logo{
+    color: black;
+    background-color: yellow;
+    text-shadow: 1px 1px 2px black;
+    padding: 10px 15px 10px 20px;
+}
+
+.navbar-links{
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+}
+
+.navbar-link {
+    display: flex;
+    align-items: center;
+    color: yellow;
+    text-shadow: 2px 2px 4px black;
+    background-color: transparent;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.navbar-link:hover{
+    background-color: yellow;
+    color: black;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.navbar-link i{
+    color: yellow;
+    text-shadow: 1px 1px 2px black;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.option{
+    background-color: #323232;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.option i{
+    float: right;
+    font-size: 20px;
+    color: red;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}
+
+.option p{
+    background-color: transparent;
+    color: yellow;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+    margin-top: 5px;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.option p:hover{
+    background-color: yellow;
+    color: black;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.about-option-box{
+    display: none;
+}
+
+.navbar-menu-toggle{
+    display: none;
+    color: yellow;
+    font-size: 25px;
+    padding-right: 20px;
+    text-shadow: 2px 2px 4px #323232;
+}
+
+/* side navbar */
+
+.side-navbar{
+    background-color: yellow;
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -90%;
+    padding: 20px;
+    transition: 2s;
+    overflow: scroll;
+}
+
+.side-navbar-link{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.side-navbar-link p{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #323232;
+    cursor: pointer;
+}
+
+.cross-symbol{
+    color: red;
+    text-align: right;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.side-navbar-about-option-box{
+    display: none;
+}
+
+.side-navbar-about-option p{
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 5px;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.side-navbar-about-option i{
+    float: right;
+    padding-right: 60px;
+    font-size: 20px;
+    color: red;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}
+
+.side-navbar-about-option :hover{
+    background-color: black;
+    text-decoration: underline white;
+    font-size: 18px;
+    color: yellow;
+    border-radius: 5px;
+}
+
+.side-navbar::-webkit-scrollbar{
+    width: 5px;
+}
+
+.side-navbar::-webkit-scrollbar-track{
+    background-color: yellow;
+}
+
+.side-navbar::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius: 20px;
+}
+
+.logo-option{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 30px 0 0 520px;
+}
+
+.logo-option i{
+    color: rgb(247, 3, 85);
+    font-size: 10px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.logo-option h4{
+    color:  yellow;
+    text-decoration: underline 2px white;
+    text-shadow: 0.5px 0.5px 1px black;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo-option h5{
+    color: yellow;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.photo-gallery-title{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.photo-gallery-title h3{
+    font-size: 28px;
+    color: yellow;
+    text-shadow: 2px 2px 4px #323232;
+}
+
+.photo-gallery-title p{
+    padding-top: 10px;
+    margin-left: 300px;
+    width: 760px;
+    color: yellow;
+    text-shadow: 2px 2px 4px #323232;
+}
+
+.photo-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 50px 0 0 45px;
+}
+
+.photo-gallery img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.load-more{
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+.load-more button{
+    border: none;
+    background-color: yellow;
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+    padding: 7px 30px 7px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: #323232 0px 50px 100px -20px, #323232 0px 30px 60px -30px, #323232 0px -2px 6px 0px inset;
+}
+
+   /* Contact us */
+
+.contact-box{
+    background-color: yellow;
+    margin-top: 50px;
+}
+
+.email-sent-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+}
+
+.social-icon{
+    padding-left: 50px;
+}
+
+.social-icon h3{
+    color: black;
+    font-size: 25px;
+}
+
+.social-media-icon{
+    padding-top:10px;
+}
+
+.social-media-icon i{
+    padding-right: 20px;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px black;
+    cursor: pointer;
+}
+
+.email{
+    padding-right: 100px;
+}
+
+.email h4{
+    font-weight: bold;
+}
+
+.email-box input{
+    border: 2px solid black;
+    background-color: transparent;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+}
+
+.email-box input::placeholder{
+    padding-left: 20px;
+    color: black;
+    font-size: 18px;
+}
+
+.email-box button{
+    background-color: black;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 25px 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-us{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.contact-text h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact-text p{
+    font-weight: bold;
+    color: #323232;
+}
+
+@media screen and (max-width: 768px){
+
+    .logo{
+        font-size: 10px;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+
+    .navbar-menu-toggle{
+        display: block;
+    }
+
+    .logo-option{
+        margin: 30px 0 0 30px;
+    }
+
+    .photo-gallery-title p{
+        width: 350px;
+        margin-left: 20px;
+    }
+
+    .social-icon{
+        padding-left: 30px;
+    }
+
+    .email-sent-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .email{
+        padding-right: 0;
+        padding: 25px 0 0 0;
+    }
+
+    .email-box input{
+        width: 350px;
+    }
+
+    .email-box button{
+        margin-top: 15px;
+    }
+    
+    .contact-us{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+
+
+
+
